@@ -1,0 +1,182 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } 
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+
+body {max-width: 1700px;
+	margin: 0 auto;}
+
+
+/*-------Top of Page Styles-------*/
+
+h1, h3 {font-family: 'Open Sans Condensed', Helvetica, sans-serif;
+	min-width: 1250px;
+}
+
+h1 {font-size: 48px;
+	text-transform: uppercase;
+	color: #333;
+	margin: 12px 0 -8px 35px;
+	letter-spacing: -1px;
+}
+
+h3 {font-size: 18px;
+	color: #7c7b7b;
+	text-indent: 20px;
+	margin:0 0 20px 35px;
+	letter-spacing: 2px;
+}
+
+h5 {font-family:'Open Sans',sans-serif;
+	font-size: 10px;
+	padding:10px 0 8px 10px;
+	letter-spacing: 1px;
+	background-color: #ddd;}
+
+#socialShare {
+	position: relative;
+	float: right;
+	right:30px;
+	margin-top: -20px;
+	}
+
+
+/*----------- Main Styles -------------*/
+
+#main {width: 100%;
+	height: 450px;
+	background-image: url(../img/outside_cabin_crop.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-width: 1250px;
+}
+
+section {
+	height: 420px;
+	width: 300px;
+	position: relative;
+	top: 50px;
+	left: 50px;
+	-webkit-box-shadow: 0px 10px 20px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 10px 20px rgba(0,0,0,0.75);
+		box-shadow: 0px 10px 20px rgba(0,0,0,0.75);
+}
+
+h2,h4 {font-family:'Open Sans',sans-serif;
+	color: black;
+	word-spacing: -2px;
+	}
+
+
+h2 {font-size: 16px;
+	font-weight: 700;}
+
+h4 {font-size: 14px;
+	margin: 15px 0 0 20px;
+}
+
+
+
+#feature1 {
+	padding: 20px;
+	background-color: rgba(240,240,240,0.9);
+    height: 240px; 
+}
+
+#feature2 {background-color: #383E47;
+	height: 180px;
+	text-align: center;
+}
+
+.icons {width: 35px;
+	height: auto;
+	margin:8px 16px;
+} 
+
+#row1 {padding-top: 35px;}
+
+
+/* -------- Footer Styles ---------*/
+
+button {position: relative;
+	top:70px;
+	left: 50px;
+	width:300px;
+	background-color: #4CAF51; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px; 
+    float: left;
+    z-index: 5;
+    margin-top: -2px;
+	}
+
+button:hover {box-shadow: 0 6px 8px 0 rgba(0,0,0,0.20),0 8px 25px 0 rgba(0,0,0,0.17);
+	cursor: pointer;}
+
+.photoThumbs {
+	width: 200px;
+	height: 200px;
+	margin: 0 2px;
+	position: relative;
+	left: 20px;
+}
+
+#gallery {text-align: center;
+	padding-top: 10px;
+	min-width: 1250px;
+	position: relative;
+}
+
+#largePhotoAnchor {display: none;}
+
+footer {
+	background-color: #eee;
+	height: 225px;
+}
+
+a {text-decoration: none;}
+
+
+
+/*----------- Lightbox Styles -------------*/
+
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    opacity:.80;
+}
+.white_content {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 30%;
+    height: 50%;
+    padding: 16px;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+}
+
+
+/*---------- Media Queries -------------*/
+
+@media only screen and (min-width: 1520px) {
+
+	.photoThumbs {height: 275px;
+		width: 275px;}	
+
+	footer {height: 298px;}
+}
+
+
+
+
+

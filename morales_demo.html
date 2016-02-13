@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>The Opulence at Richardson Square</title>
+  <meta name="description" content="Demo Rent Webpage">
+  <meta name="author" content="Dave Morales">
+
+<!--
+All pictures from Flickr.com licensed under Creative Commons.
+All icons from www.icons8.com, not linked for purpose of demo. 
+-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+ <link rel="stylesheet" href="css/swipebox.css">
+ <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/jquery.swipebox.js"></script>
+
+</head>
+
+<body>
+
+	<div id="container">
+		<header>
+			<h5>Back to Search Results</h5>
+			<h1>The Opulence at Richardson Square</h1>
+			<h3>1437 Luxury Lane | Norfolk, VA | 555-555-5555 </h3>
+			<div id="socialShare" class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			 <!-- Used for quick conceptual addition of social bar --> 
+				<a class="a2a_button_facebook"></a>
+				<a class="a2a_button_pinterest"></a>
+				<a class="a2a_button_email"></a>
+				<a class="a2a_button_print"></a>
+			</div> <!-- End socialShare div -->
+		</header>
+
+		<div id="main">
+			<section>
+				<div id="feature1">
+					<h2>This aparment has so many nice features, you must move in immediately.</h2>
+					<h4>These are subheadings/cool features/highlights.</h4>
+					<h4>More details since you cannot get enough. Interesting tidbits.</h4>
+					<h4>One last little morsel.</h4>
+
+				</div> <!-- End feature1 div -->
+				<div id="feature2">
+					<div id="row1">
+						<img class="icons" src="img/dog_footprint.png" alt="dogs allowed logo">
+						<img class="icons" src="img/car_garage.png" alt="car garage logo">
+						<img class="icons" src="img/valet.png" alt="valet logo">
+					</div> <!-- closes row1 div -->
+					<div id="row2">
+						<img class="icons" src="img/gym.png" alt="gym logo">
+						<img class="icons" src="img/swim.png" alt="swimming pool logo">
+						<img class="icons" src="img/wash_machine.png" alt="washing machine logo">
+					</div> <!-- closes row2 div -->	
+				</div> <!-- End feature2 div -->
+			</section>
+		</div> <!-- End main div -->
+
+		<footer>
+			<button type="button"  onclick="formShow()">Check Availability</button>
+			<div id="gallery">
+				<a href="img/bathroom_web.jpg" class="swipebox" title="Bathroom">
+					<img class="photoThumbs" src="img/bathroom_web.jpg" alt="image">
+				</a>
+				<a href="img/bedroom_web.jpg" class="swipebox" title="Master Bedroom">
+					<img class="photoThumbs" src="img/bedroom_web.jpg" alt="image">
+				</a>
+				<a href="img/kitchen_web.jpg" class="swipebox" title="Kitchen">
+					<img class="photoThumbs" src="img/kitchen_web.jpg" alt="image">
+				</a>
+				<a href="img/stairs_web.jpg" class="swipebox" title="Living Room">
+					<img class="photoThumbs" src="img/stairs_web.jpg" alt="image">
+				</a>
+				<a id="largePhotoAnchor" href="img/outside_cabin_web.jpg" class="swipebox" title="Community Pool House">
+				<img src="img/outside_cabin_web.jpg" alt="image">
+				</a>
+			</div> <!-- Ends gallery div -->
+		</footer>
+	</div> <!-- Ends container div -->
+
+
+	<div id="light" class="white_content">Form similar to exsiting form goes here. 
+		<a href="#" onclick="formRemove()">Close</a>
+	</div>
+
+	<div id="fade" class="black_overlay"></div>
+
+<script async src="https://static.addtoany.com/menu/page.js"></script>  
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+		/* Basic Gallery */
+		$( '.swipebox' ).swipebox();
+		});
+	</script>
+</body>
+</html>
